@@ -23,8 +23,8 @@ def inverse_chaine(chaine):
 
 def est_palindrome(chaine):
     inverse = inverse_chaine(chaine)
-    return True if inverse == chaine else False
+    return True if inverse == chaine else False # version 1
     
 def est_nbre_palindrome(nbre):
     chaine = inverse_chaine(str(nbre))
-    return True if str(nbre) == chaine else False
+    return str(nbre) == chaine # version 2 qui est égal a v1
