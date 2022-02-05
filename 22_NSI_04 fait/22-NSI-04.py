@@ -7,14 +7,6 @@ def recherche(tab):
 
 
 def propager(M, i, j, val): 
-    """[BAH ELLE PROPAGE GROS CON]
-
-    Args:
-        M ([int]): [M]
-        i ([int]): [i]
-        j ([int]): [j]
-        val ([int]): [val]
-    """
     if M[i][j]== val: 
         return 
  
