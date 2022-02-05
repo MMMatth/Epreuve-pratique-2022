@@ -21,13 +21,16 @@ def est_cyclique(plan):
     et False sinon. 
     '''
     personne = 'A'
-    N = len(plan)                          
+    N = len(plan)-1                          
     for i in range(N):
-        print(personne)
-        if plan[personne] == personne:
+        if plan[personne] == "A":
             return False
         else:
             personne = plan[personne]
     return True
 
-print(est_cyclique({'A':'B', 'F':'A', 'C':'D', 'E':'C', 'B':'F', 'D':'E'}))
+assert est_cyclique({'A':'E', 'F':'A', 'C':'D', 'E':'B', 'B':'F', 'D':'C'}) == False 
+assert est_cyclique({'A':'E', 'F':'C', 'C':'D', 'E':'B', 'B':'F', 'D':'A'}) == True 
+assert est_cyclique({'A':'B', 'F':'C', 'C':'D', 'E':'A', 'B':'F', 'D':'E'}) == True 
+assert est_cyclique({'A':'B', 'F':'A', 'C':'D', 'E':'C', 'B':'F', 'D':'E'}) == False 
+ 

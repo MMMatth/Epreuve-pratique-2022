@@ -45,10 +45,10 @@ class File :
                 resultat = self.dernier_file.valeur 
                 self.dernier_file = None 
                 return resultat 
-            maillon = self.dernier_file.suivant
+            maillon = self.dernier_file
             while maillon.suivant.suivant != None : 
                 maillon = maillon.suivant 
-            resultat = maillon.valeur  
+            resultat = maillon.suivant.valeur
             maillon.suivant = None 
             return resultat 
         return None
@@ -56,11 +56,4 @@ class File :
 
 F = File() 
 assert F.est_vide() == True 
-F.enfile(2) 
-F.enfile(5) 
-F.enfile(7)
-F.enfile(2) 
-F.enfile(7)  
-
-print(F.defile(),F.defile())
 

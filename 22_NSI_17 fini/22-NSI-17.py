@@ -5,7 +5,6 @@ def nombre_de_mots(phrase):
             tmp += 1
     return tmp
 
-print(nombre_de_mots('Il y a un seul espace entre les mots !'))
 
 class Noeud:
     '''
@@ -43,9 +42,9 @@ class ABR:
         if self.est_vide():
             return tab
         else:
-            self.racine.gauche.parcours(tab)
-            tab.append(...)
-            ...
+            self.racine.gauche.parcours(tab) 
+            tab.append(self.racine.valeur) 
+            self.racine.droite.parcours(tab)
             return tab
         
     def insere(self, element):
@@ -67,8 +66,19 @@ class ABR:
             return False
         else:
             if element < self.racine.valeur:
-                return ...
+                return self.racine.gauche.recherche(element)
             elif element > self.racine.valeur:
-                return ...
+                return self.racine.droite.recherche(element)
             else:
-                return ...
+                return True
+
+a = ABR() 
+a.insere(7) 
+a.insere(3) 
+a.insere(9) 
+a.insere(1) 
+a.insere(9) 
+assert a.parcours() == [1, 3, 7, 9, 9] 
+assert a.recherche(4) == False 
+assert a.recherche(3) == True 
+ 

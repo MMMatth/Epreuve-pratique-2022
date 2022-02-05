@@ -11,16 +11,16 @@ def taille(arbre, racine):
     elif arbre[racine][0] == '' and arbre[racine][1] == '':
         return 1 
 
-print(taille(a, 'F'))
+assert taille(a, 'F')== 9
 
 def tri_iteratif(tab):
     for k in range(len(tab)-1 , 0, -1):
         imax = k
-        for i in range(0 , len(tab) ):
+        for i in range(0 , k):
             if tab[i] > tab[imax] :
                 imax = i
-        if tab[imax] > i :
-            tab[i] , tab[imax] = tab[imax] , tab[i]
+        if tab[imax] > tab[k] :
+            tab[k] , tab[imax] = tab[imax] , tab[k]
     return tab
 
-# print(tri_iteratif([41, 55, 21, 18, 12, 6, 25]))
+assert tri_iteratif([41, 55, 21, 18, 12, 6, 25]) == [6, 12, 18, 21, 25, 41, 55]

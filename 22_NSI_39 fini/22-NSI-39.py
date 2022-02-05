@@ -39,7 +39,7 @@ def zoomListe(liste_depart,k):
     liste_zoom = []
     for elt in range(len(liste_depart)):
         for i in range(k):
-            liste_zoom.append(liste_depart[elt]*k)
+            liste_zoom.append(liste_depart[elt])
     return liste_zoom
 
 def zoomDessin(grille,k):
@@ -47,9 +47,7 @@ def zoomDessin(grille,k):
        ET repetees k fois'''
     grille_zoom=[]
     for elt in grille:
-        liste_zoom = zoomListe(grille,k)
+        liste_zoom = zoomListe(elt,k)
         for i in range(k):
-            grille_zoom.append(liste_zoom[i])
+            grille_zoom.append(liste_zoom)
     return grille_zoom
-
-(affiche(zoomListe(coeur,1)))
