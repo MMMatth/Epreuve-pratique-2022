@@ -1,14 +1,12 @@
 def occurence_lettres(phrase):
     d ={}
-    tmp = 0
     for i in phrase:
         d[i] = 0
     for j in phrase:
-        if j == phrase[tmp]:
-            d[j] +=1
-        tmp +=1
+        d[j] +=1
     return d
 
+print(occurence_lettres('Hello Word !'))
 
 def fusion(L1,L2):
     n1 = len(L1)
@@ -34,5 +32,3 @@ def fusion(L1,L2):
         i2 = i2 + 1
         i = i + 1
     return L12
-
-print(fusion([1,6,10],[0,7,8,9]))

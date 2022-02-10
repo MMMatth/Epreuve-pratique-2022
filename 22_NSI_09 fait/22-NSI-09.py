@@ -1,17 +1,17 @@
 def calcul(n):
-    U = n
-    L = [U]
+    L = [n]
     cond = True
     while cond:
-        if U%2 == 0: # si le chiffre est paire
-            U = U // 2 
-            L.append(U)
-        elif U%2 == 1: # si le chiffre est impaire
-            U = 3 * U + 1
-            L.append(U)
-        if U == 1:
+        if n%2 == 0: # si le chiffre est paire
+            n = n // 2 
+            L.append(n)
+        elif n%2 == 1: # si le chiffre est impaire
+            n = 3 * n + 1
+            L.append(n)
+        if n == 1:
             return L 
-
+        
+assert calcul(7) == [7, 22, 11, 34, 17, 52, 26, 13, 40, 20, 10, 5, 16, 8, 4, 2, 1]
 
 dico = {"A":1, "B":2, "C":3, "D":4, "E":5, "F":6, "G":7, \
         "H":8, "I":9, "J":10, "K":11, "L":12, "M":13, \
