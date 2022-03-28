@@ -21,6 +21,11 @@ def multiplication(n1,n2):
         for i in range(-n2):
             res+=n1
         return -res
+    
+    assert multiplication(3,5) == 15 
+    assert multiplication(-4,-8) == 32 
+    assert multiplication(-2,6) == -12 
+    assert multiplication(-2,0) == 0
 
 
 def chercher(T,n,i,j):
