@@ -1,7 +1,7 @@
 # Epreuve-pratique-2022 Correction
 
 <p align = "center">
-  <img src="img/img.jpg" width = 75% >
+  <img src="img.jpg" width = 75% >
 </p>
 
 ## 🚀 What is that ?
