@@ -1,12 +1,12 @@
 # Epreuve-pratique-2022 Correction
 
 <p align = "center">
-  <img src="img.jpg" width = 75% >
+  <img src="img.jpg" width = 100% >
 </p>
 
 ## 🚀 What is that ?
 Is partical test for my big test of the end-year.
-Contact me if you see a mistake contact me
+Contact me if you see a mistake.
 
 ## :mailbox: Contact me :
 <div align="center">
